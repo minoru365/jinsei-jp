@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "人生.jp",
+    "slug": "jinsei-jp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f0e17"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "jp.jinsei.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f0e17"
+      },
+      "package": "jp.jinsei.app"
+    },
+    "plugins": [
+      "expo-router",
+      "@react-native-community/datetimepicker"
+    ],
+    "scheme": "jinsei-jp"
+  }
+}
