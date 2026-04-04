@@ -21,6 +21,6 @@
 ## お問い合わせ
 
 プライバシーに関するご質問は以下までご連絡ください。  
-https://github.com/PLUG365/jinsei-jp/issues
+https://x.com/meccha__eeyan
 
 最終更新日: 2026年4月5日
