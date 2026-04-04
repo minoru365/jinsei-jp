@@ -13,7 +13,10 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "jp.jinsei.app"
+      "bundleIdentifier": "jp.jinsei.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +29,12 @@
       "expo-router",
       "@react-native-community/datetimepicker"
     ],
-    "scheme": "jinsei-jp"
+    "scheme": "jinsei-jp",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "03d1a084-12b3-4945-9929-00a45991f289"
+      }
+    }
   }
 }

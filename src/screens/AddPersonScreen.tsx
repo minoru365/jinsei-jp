@@ -54,14 +54,19 @@ export default function AddPersonScreen({ onAdd, onCancel }: Props) {
         </TouchableOpacity>
 
         {showPicker && (
-          <DateTimePicker
-            value={dob}
-            mode="date"
-            display={Platform.OS === 'ios' ? 'spinner' : 'default'}
-            maximumDate={new Date()}
-            onChange={(_, d) => { setShowPicker(false); if (d) setDob(d); }}
-            locale="ja"
-          />
+          <>
+            <DateTimePicker
+              value={dob}
+              mode="date"
+              display={Platform.OS === 'ios' ? 'spinner' : 'default'}
+              maximumDate={new Date()}
+              onChange={(_, d) => { if (d) setDob(d); }}
+              locale="ja"
+            />
+            <TouchableOpacity style={styles.pickerDoneBtn} onPress={() => setShowPicker(false)}>
+              <Text style={styles.pickerDoneText}>決定</Text>
+            </TouchableOpacity>
+          </>
         )}
 
         <Text style={styles.label}>性別</Text>
@@ -103,6 +108,12 @@ const styles = StyleSheet.create({
     padding: 13, marginBottom: 14,
   },
   dateBtnText: { fontSize: 16, color: C.text },
+  pickerDoneBtn: {
+    alignSelf: 'flex-end', marginBottom: 8,
+    paddingHorizontal: 20, paddingVertical: 8,
+    backgroundColor: C.yellow, borderRadius: 10,
+  },
+  pickerDoneText: { fontSize: 14, fontWeight: '700', color: '#0f0e17' },
   segRow: { flexDirection: 'row', gap: 8, marginBottom: 16 },
   seg: {
     flex: 1, paddingVertical: 11, borderRadius: 12,
