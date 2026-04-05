@@ -9,7 +9,8 @@ interface Props {
 }
 
 export default function FortuneScreen({ dob }: Props) {
-  const fortune = getTodayFortune(new Date(dob));
+  const [y, m, d] = dob.split('-').map(Number);
+  const fortune = getTodayFortune(new Date(y, m - 1, d));
   const { level, message, item, color, number, luck, love, work, money } = fortune;
 
   const today = new Date();

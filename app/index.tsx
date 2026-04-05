@@ -13,8 +13,13 @@ import EventsScreen  from '../src/screens/EventsScreen';
 import FortuneScreen from '../src/screens/FortuneScreen';
 import AddPersonScreen from '../src/screens/AddPersonScreen';
 
+function parseDob(dob: string): Date {
+  const [y, m, d] = dob.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
 function computeAge(dob: string): number {
-  const d = new Date(dob);
+  const d = parseDob(dob);
   const today = new Date();
   const m = d.getMonth(), day = d.getDate();
   return today.getFullYear() - d.getFullYear() -
@@ -67,10 +72,10 @@ export default function App() {
   }, []);
 
   const active = people.find(p => p.id === activeId) ?? null;
-  const events = active ? buildAllEvents(new Date(active.dob), active.sex) : [];
+  const events = active ? buildAllEvents(parseDob(active.dob), active.sex) : [];
   const age    = active ? computeAge(active.dob) : 0;
   const info   = active ? (() => {
-    const d = new Date(active.dob);
+    const d = parseDob(active.dob);
     return {
       wareki: toWarekiFromDate(d),
       zodiac: getZodiac(d.getMonth() + 1, d.getDate()),

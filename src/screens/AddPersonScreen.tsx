@@ -30,7 +30,7 @@ export default function AddPersonScreen({ onAdd, onCancel }: Props) {
 
   const handleAdd = () => {
     if (!name.trim()) return;
-    const iso = dob.toISOString().split('T')[0];
+    const iso = `${dob.getFullYear()}-${String(dob.getMonth()+1).padStart(2,'0')}-${String(dob.getDate()).padStart(2,'0')}`;
     onAdd({ id: Date.now().toString(), name: name.trim(), dob: iso, sex });
   };
 
