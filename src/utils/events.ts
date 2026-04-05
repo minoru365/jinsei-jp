@@ -77,6 +77,7 @@ export function buildAllEvents(birthDate: Date, sex: Sex): LifeEvent[] {
     ev.push({ label:'厄年 後厄（女・34歳）', year:y+34, note:'女性 大厄後厄',  filter:'adult', tag:'⚠️', color:'#60a5fa' });
     ev.push({ label:'厄年 前厄（女・37歳）', year:y+36, note:'女性 37歳前厄',  filter:'adult', tag:'⚠️', color:'#60a5fa' });
     ev.push({ label:'厄年 本厄（女・37歳）', year:y+37, note:'女性 37歳本厄',  filter:'adult', tag:'⚠️', color:'#60a5fa' });
+    ev.push({ label:'厄年 後厄（女・38歳）', year:y+38, note:'女性 37歳後厄',  filter:'adult', tag:'⚠️', color:'#60a5fa' });
   }
   ev.push({ label:'年金受給開始（目安）', year:y+65, note:'65歳（繰上・繰下により変動）', filter:'adult', tag:'💴', color:'#60a5fa' });
 
