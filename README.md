@@ -6,11 +6,11 @@
 
 ## 機能
 
+- 🏠 ホーム画面で全メンバーの今年のイベントを一覧表示（年送り対応）
 - 👥 複数人の登録・管理（AsyncStorageで端末内に永続化）
 - 📅 ライフイベント年表（子ども / 学校 / 成人 / 長寿）カテゴリフィルター付き
 - 🎑 七五三・厄年・参政権・運転免許など性別対応イベント
 - 🗓 全イベントに和暦（令和・平成・昭和…）を表示
-- 🔮 今日の運勢（ラッキーアイテム・カラー・ナンバー）
 
 ## セットアップ
 
@@ -37,20 +37,20 @@ eas submit --platform ios
 jinsei-jp/
 ├── app/
 │   ├── _layout.tsx        # Expo Router レイアウト
-│   └── index.tsx          # メイン画面
+│   └── index.tsx          # メイン画面・状態管理
 ├── src/
 │   ├── utils/
 │   │   ├── calendar.ts    # 和暦・干支・星座
 │   │   ├── colors.ts      # カラー定数
 │   │   ├── events.ts      # ライフイベント生成
-│   │   ├── fortune.ts     # 運勢ロジック
-│   │   └── storage.ts     # AsyncStorage管理
+│   │   ├── storage.ts     # AsyncStorage管理
+│   │   └── yearlyEvents.ts # 年別イベント集計
 │   ├── components/
 │   │   └── TimelineRow.tsx
 │   └── screens/
 │       ├── AddPersonScreen.tsx
 │       ├── EventsScreen.tsx
-│       └── FortuneScreen.tsx
+│       └── HomeScreen.tsx
 └── assets/                # アイコン・スプラッシュ
 ```
 

@@ -25,12 +25,12 @@ export function buildAllEvents(birthDate: Date, sex: Sex): LifeEvent[] {
   const ev: LifeEvent[] = [];
 
   // ── 子ども ──────────────────────────────────────────────────
-  ev.push({ label:'お七夜',                 year:y,   note:'誕生から7日目・命名のお祝い',                          filter:'kids', tag:'🍼', color:'#f472b6' });
-  ev.push({ label:'お宮参り',               year:y,   note:isMale?'男の子: 生後31〜32日目':isFemale?'女の子: 生後32〜33日目':'男の子: 生後31〜32日目 / 女の子: 生後32〜33日目', filter:'kids', tag:'⛩', color:'#f472b6' });
-  ev.push({ label:'お食い初め（百日祝い）', year:y,   note:'生後100〜120日頃、一生食べ物に困らないよう願う',      filter:'kids', tag:'🍚', color:'#f472b6' });
-  ev.push({ label:'ハーフバースデー',       year:y,   note:'生後6ヶ月のお祝い',                                   filter:'kids', tag:'🎀', color:'#f472b6' });
-  ev.push({ label:'初節句',  year:m<=(isMale?4:isFemale?2:3)?y:y+1, note:isMale?'端午の節句（5月5日）':isFemale?'桃の節句（3月3日）':'男の子: 端午の節句（5月5日）/ 女の子: 桃の節句（3月3日）', filter:'kids', tag:'🎎', color:'#f472b6' });
-  ev.push({ label:'1歳誕生日（一升餅）',   year:y+1, note:'一升餅を背負わせて健やかな成長を願う',                filter:'kids', tag:'🎂', color:'#f472b6' });
+  ev.push({ label:'お七夜',                 year:y,   note:'誕生から7日目・命名のお祝い',                          filter:'kids', tag:'🍼', color:'#6ee7b7' });
+  ev.push({ label:'お宮参り',               year:y,   note:isMale?'男の子: 生後31〜32日目':isFemale?'女の子: 生後32〜33日目':'男の子: 生後31〜32日目 / 女の子: 生後32〜33日目', filter:'kids', tag:'⛩', color:'#6ee7b7' });
+  ev.push({ label:'お食い初め（百日祝い）', year:y,   note:'生後100〜120日頃、一生食べ物に困らないよう願う',      filter:'kids', tag:'🍚', color:'#6ee7b7' });
+  ev.push({ label:'ハーフバースデー',       year:y,   note:'生後6ヶ月のお祝い',                                   filter:'kids', tag:'🎀', color:'#6ee7b7' });
+  ev.push({ label:'初節句',  year:m<=(isMale?4:isFemale?2:3)?y:y+1, note:isMale?'端午の節句（5月5日）':isFemale?'桃の節句（3月3日）':'男の子: 端午の節句（5月5日）/ 女の子: 桃の節句（3月3日）', filter:'kids', tag:'🎎', color:'#6ee7b7' });
+  ev.push({ label:'1歳誕生日（一升餅）',   year:y+1, note:'一升餅を背負わせて健やかな成長を願う',                filter:'kids', tag:'🎂', color:'#6ee7b7' });
 
   if (isMale || both) {
     ev.push({ label:'七五三 3歳（男）', year:y+3+(lateNov?1:0), note:'髪置きの儀 11/15ごろ', filter:'kids', tag:'🎎', color:'#fb923c' });
