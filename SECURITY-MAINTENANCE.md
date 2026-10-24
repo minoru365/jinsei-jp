@@ -62,6 +62,8 @@ was not modified and is not uploaded to EAS; verify cloud doctor on the retry.
 
 The corrected cloud build passed all 18 Expo doctor checks and completed as
 1.2.0 (10), commit ef610e0, build ID 105ced92-a6c6-4e72-95ad-4567f13e61bf.
-TestFlight submission 3fc89a21-a598-4505-82f3-a9693b9918fc successfully uploaded to
-App Store Connect on 2026-10-24. Apple processing and device verification remain;
-no public App Store release was requested or performed.
+TestFlight submission 3fc89a21-a598-4505-82f3-a9693b9918fc uploaded to App Store
+Connect, but Apple subsequently rejected it with ITMS-90186 / ITMS-90062 because
+1.2.0 was already approved and its release train was closed. Upload success was
+not Apple acceptance. Marketing version is increased to 1.2.1 for a new build.
+No public App Store release was requested or performed.
