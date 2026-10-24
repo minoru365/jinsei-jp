@@ -67,3 +67,13 @@ Connect, but Apple subsequently rejected it with ITMS-90186 / ITMS-90062 because
 1.2.0 was already approved and its release train was closed. Upload success was
 not Apple acceptance. Marketing version is increased to 1.2.1 for a new build.
 No public App Store release was requested or performed.
+
+For subsequent releases, check the latest approved version in App Store Connect
+before building, and verify the resolved Expo marketing version is higher.
+Increasing only the remote build number is insufficient for a closed release train.
+Report EAS upload and Apple's processing/TestFlight availability separately.
+
+Version-corrected release: 1.2.1 (11), commit 535bccf,
+build a835fb04-807f-4b6f-a659-4e2ce1e11d42 completed successfully. Submission
+df7df14b-651d-4b1c-bec8-b72791660765 uploaded to App Store Connect on 2026-10-24.
+Apple processing completion and TestFlight device testing are not yet verified.
