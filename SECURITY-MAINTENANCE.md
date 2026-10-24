@@ -57,3 +57,11 @@ All 14 Metro packages resolve to 0.83.8; image-size is absent. Audit remains 4H/
 Local expo-doctor reports an additional React 19.2.0 in an ancestor directory outside
 this checkout, alongside the correct local React 19.1.0. That external installation
 was not modified and is not uploaded to EAS; verify cloud doctor on the retry.
+
+## Release result
+
+The corrected cloud build passed all 18 Expo doctor checks and completed as
+1.2.0 (10), commit ef610e0, build ID 105ced92-a6c6-4e72-95ad-4567f13e61bf.
+TestFlight submission 3fc89a21-a598-4505-82f3-a9693b9918fc successfully uploaded to
+App Store Connect on 2026-10-24. Apple processing and device verification remain;
+no public App Store release was requested or performed.
