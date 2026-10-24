@@ -76,4 +76,5 @@ Report EAS upload and Apple's processing/TestFlight availability separately.
 Version-corrected release: 1.2.1 (11), commit 535bccf,
 build a835fb04-807f-4b6f-a659-4e2ce1e11d42 completed successfully. Submission
 df7df14b-651d-4b1c-bec8-b72791660765 uploaded to App Store Connect on 2026-10-24.
-Apple processing completion and TestFlight device testing are not yet verified.
+Apple's TestFlight notification confirmed 1.2.1 (11) is available to test on
+2026-10-24. Device verification remains; no public App Store release was performed.
